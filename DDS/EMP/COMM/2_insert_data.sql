@@ -22,4 +22,4 @@ FROM sml_str postgres
 )
 
 insert into emp.COMM
-select * from t2
+select distinct * from t2
