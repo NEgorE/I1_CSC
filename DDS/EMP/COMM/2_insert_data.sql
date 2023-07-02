@@ -16,8 +16,8 @@ SELECT
 (xpath('//InitialsName/text()',unnest(xpath('//Employee/Common/PersonName/InitialsName',XMLSTR))))[1]::varchar(10) AS InitialsName,	
 (xpath('//DeviatingFullName/text()',unnest(xpath('//Employee/Common/PersonName/DeviatingFullName',XMLSTR))))[1]::varchar(255) AS DeviatingFullName,
 (xpath('//BirthDate/text()',unnest(xpath('//Employee/Common/BirthDate',XMLSTR))))[1]::text::date AS BirthDate,
-(xpath('//StartDate/text()',unnest(xpath('//Employee/Common/ValidityPeriod/StartDate',XMLSTR))))[1]::text::date AS Common_StartDate,
-(xpath('//EndDate/text()',unnest(xpath('//Employee/Common/ValidityPeriod/EndDate',XMLSTR))))[1]::text::date AS Common_EndDate
+(xpath('//StartDate/text()',unnest(xpath('//Employee/Common/ValidityPeriod/StartDate',XMLSTR))))[1]::text::date AS Comm_StartDate,
+(xpath('//EndDate/text()',unnest(xpath('//Employee/Common/ValidityPeriod/EndDate',XMLSTR))))[1]::text::date AS Comm_EndDate
 FROM sml_str postgres
 )
 

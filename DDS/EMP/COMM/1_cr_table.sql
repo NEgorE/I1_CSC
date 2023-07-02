@@ -13,6 +13,6 @@ CREATE TABLE IF NOT EXISTS emp.comm
     initialsname character varying(10) COLLATE pg_catalog."default",
     deviatingfullname character varying(255) COLLATE pg_catalog."default",
     birthdate date,
-    common_startdate date,
-    common_enddate date
+    comm_startdate date,
+    comm_enddate date
 )
