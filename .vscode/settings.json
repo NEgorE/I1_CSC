@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "192.168.100.197",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "MyDB",
+            "group": "psg",
+            "database": "test",
+            "username": "for_py2"
+        }
+    ]
+}
